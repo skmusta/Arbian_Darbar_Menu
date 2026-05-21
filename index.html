@@ -184,7 +184,24 @@ document
 
 });
 
+const rawTime = document.getElementById("time").value;
 
+function convertToAMPM(time){
+  let [hours, minutes] = time.split(":");
+  hours = parseInt(hours);
+
+  const ampm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12 || 12;
+
+  return `${hours}:${minutes} ${ampm}`;
+}
+
+const bookingData = {
+  date: document.getElementById("date").value,
+  time: convertToAMPM(rawTime)
+};
+
+console.log(bookingData);
 
 
 
