@@ -172,6 +172,39 @@
   display:none;
 }
 
+
+
+
+
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:15px;
+}
+
+.input-group label{
+  margin-bottom:6px;
+  font-size:14px;
+  color:#ccc;
+}
+
+.input-group input{
+  padding:12px;
+  border:none;
+  outline:none;
+  border-radius:10px;
+  background:#111;
+  color:#fff;
+  border:1px solid #333;
+  font-size:16px;
+}
+
+.input-group input:focus{
+  border-color:#c59d5f;
+  box-shadow:0 0 8px rgba(197,157,95,0.5);
+}
+
     @media(max-width:480px){
       .brand h1{
         font-size:28px;
