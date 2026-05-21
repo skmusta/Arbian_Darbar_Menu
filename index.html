@@ -87,16 +87,9 @@
 
   <input type="number" id="guests" placeholder="Number of Guests" required>
 
-<div class="input-group">
-  <input type="time" id="time">
-  <label for="date">Select Date</label>
-  <input type="date" id="date">
-</div>
+  <input type="date" id="date" required>
 
-<div class="input-group">
-  <label for="time">Select Time</label>
-  <input type="time" id="time">
-</div>
+  <input type="time" id="time" required>
 
   <button type="submit" class="book-btn">
     Confirm Booking
@@ -184,24 +177,7 @@ document
 
 });
 
-const rawTime = document.getElementById("time").value;
 
-function convertToAMPM(time){
-  let [hours, minutes] = time.split(":");
-  hours = parseInt(hours);
-
-  const ampm = hours >= 12 ? "PM" : "AM";
-  hours = hours % 12 || 12;
-
-  return `${hours}:${minutes} ${ampm}`;
-}
-
-const bookingData = {
-  date: document.getElementById("date").value,
-  time: convertToAMPM(rawTime)
-};
-
-console.log(bookingData);
 
 
 
