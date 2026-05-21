@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arabian Darbar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="hero">
+
+      <!-- Replace logo.png with your logo -->
+      <!-- <img src="Arbian logo.webp" class="logo" alt="Arabian Darbar Logo"> -->
+
+      <div class="overlay"></div>
+
+      <div class="brand">
+        <h1>Arabian Darbar</h1>
+        <p>Authentic Taste • Premium Experience</p>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="section-title">
+        Welcome To Arabian Darbar
+      </div>
+
+      <div class="buttons">
+
+        <!-- MENU -->
+        <a href="menu.html" class="btn" target="_blank">
+          📋 View Menu Card
+        </a>
+
+        <!-- REVIEW -->
+        <a href="https://www.google.com/search?q=arabian+darbar+location&sca_esv=752e42c8dd77a4f4&rlz=1C1CHBD_enIN1172IN1172&sxsrf=ANbL-n6vr-SdP6wdDdrDHfN6FC4ASWCQfA%3A1779257665035&ei=QVENapntAbOs0-kP6cOGiQI&biw=1920&bih=911&oq=arabian+darbar+loca&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2FyYWJpYW4gZGFyYmFyIGxvY2EqAggAMgkQABgWGB4YyQMyCxAAGIAEGIoFGJIDMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgsQABiABBiKBRiGAzIFEAAY7wUyBRAAGO8FMgUQABjvBUjvGlD3AVjKD3ABeAGQAQCYAZUCoAHdB6oBBTAuMy4yuAEByAEA-AEBmAIGoAKICMICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIXEC4Y2AIYuAYY2gYY3AYYyAMYsAPYAQHCAhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAcICCxAuGK8BGMcBGIAEwgIKEAAYgAQYigUYQ8ICDhAuGK8BGMcBGIAEGI4FwgIKEAAYgAQYFBiHAsICBRAAGIAEwgIaEC4YrwEYxwEYgAQYlwUY3AQY3gQY4ATYAQGYAwCIBgGQBhS6BgYIARABGBmSBwUxLjMuMqAHoCmyBwUwLjMuMrgHgAjCBwMyLTbIByCACAE&sclient=gws-wiz-serp&dlnr=1&ved=2ahUKEwiqnI_3oceUAxXxzzgGHYm1O2wQl6ENegQIChAH#sv=CAESzAEKuAEStQEKd0FNbjMteVRDMEpLbXdQMDZSZ2hiYTJYeHhxdXVQNm9XUF9RUTNxOHAzcGcyY3lweWpDMWNDeG1iWDhpODlPR0ljOXJpeTVMVG01b3FwSW5wekQzVmNYZkI5RmVmb0Rhb3R4RWVMT1QwMlpoaDBJM3JVcXRuYXprEhZPVmdOYXVTMk92UHk0LUVQbUpEbU9BGiJBSktMRm1JOEVhaHRNcU0xTEdReTc4ZjB5OV9hY2lUWUtREgQ4MDUxGgEzKgAwADgBQAAYACCq3Pf8CUoCEAI" class="btn" target="_blank">
+          ⭐ Review Us
+        </a>
+
+        <!-- CALL -->
+       <a href="tel:+917700001781" class="btn">
+          📞 Call Now
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://instagram.com/yourpage" class="btn" target="_blank">
+        <img src="instagram.svg" alt="">   Follow On Instagram
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/077000 01781" class="btn" target="_blank">
+          <img src="whatsapp.svg" alt=""> WhatsApp Us
+        </a>
+
+
+<a href="#" class="btn" onclick="toggleBooking(); return false;">
+  🍽️ Book Your Seat
+</a>
+
+
+
+          <!-- LOCATION -->
+  <a href="https://www.google.com/maps/place/Arabian+Darbar(Haji+Sageer+Sahab)/@19.0508784,72.9104506,128m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3be7c796174ed0f1:0x75f2a105c50bf21b!2sArabian+Darbar(Haji+Sageer+Sahab)!8m2!3d19.0509392!4d72.9107944!16s%2Fg%2F11q7d_07bm!3m5!1s0x3be7c796174ed0f1:0x75f2a105c50bf21b!8m2!3d19.0509392!4d72.9107944!16s%2Fg%2F11q7d_07bm?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank">
+    📍 Our Location
+  </a>
+
+      </div>
+
+      <!-- BOOKING SECTION -->
+<div id="booking" class="booking-section hidden">
+
+  <div class="section-title">
+    Reserve Your Table
+  </div>
+
+<form class="booking-form" id="bookingForm">
+
+  <input type="text" id="name" placeholder="Your Name" required>
+
+  <input type="tel" id="phone" placeholder="Phone Number" required>
+
+  <input type="number" id="guests" placeholder="Number of Guests" required>
+
+  <input type="date" id="date" required>
+
+  <input type="time" id="time" required>
+
+  <button type="submit" class="book-btn">
+    Confirm Booking
+  </button>
+
+</form>
+
+</div>
+
+
+      <div class="footer">
+        © 2026 Arabian Darbar. All Rights Reserved.
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+function toggleBooking() {
+
+  const booking = document.getElementById("booking");
+
+  // Toggle booking section
+  booking.classList.toggle("hidden");
+
+  // Smooth scroll only when opened
+  if (!booking.classList.contains("hidden")) {
+
+    booking.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+  }
+
+}
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbxH7Xi_hXEVi0_G3ot4cka9FvffGpIPcUetpqavsvHhxpCjkGiLWfo11sMc2GcRyOVdSA/exec";
+
+document
+.getElementById("bookingForm")
+.addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  const data = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    guests: document.getElementById("guests").value,
+    date: document.getElementById("date").value,
+    time: document.getElementById("time").value
+  };
+
+  fetch(scriptURL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+
+  .then(() => {
+
+    alert("Table Booked Successfully!");
+
+    // Reset form
+    document.getElementById("bookingForm").reset();
+
+    // Close booking section automatically
+    document
+      .getElementById("booking")
+      .classList.add("hidden");
+
+  })
+
+  .catch((error) => {
+
+    console.log(error);
+
+    alert("Booking Failed!");
+
+  });
+
+});
+
+
+
+
+
+</script>
+</body>
+</html>

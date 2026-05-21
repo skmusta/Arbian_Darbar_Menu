@@ -1,0 +1,180 @@
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#000;
+      color:#fff;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .container{
+      width:100%;
+      max-width:420px;
+      background:#111;
+      border:1px solid #222;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 0 30px rgba(255,165,0,0.15);
+    }
+
+    .hero{
+      position:relative;
+      height:240px;
+      background:url('Arbian\ logo.webp') center/cover;
+    }
+
+    .overlay{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9));
+    }
+
+    .brand{
+      position:absolute;
+      bottom:25px;
+      left:20px;
+      z-index:2;
+    }
+
+    .brand h1{
+      font-size:34px;
+      color:#f5b041;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    .brand p{
+      color:#ddd;
+      margin-top:5px;
+      font-size:14px;
+    }
+
+    .content{
+      padding:25px;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:20px;
+      color:#f5b041;
+      font-size:18px;
+      font-weight:600;
+    }
+
+    .buttons{
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    .btn{
+      text-decoration:none;
+      background:#1b1b1b;
+      border:1px solid #333;
+      color:#fff;
+      padding:16px;
+      border-radius:14px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      font-size:15px;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#f5b041;
+      color:#000;
+      transform:translateY(-2px);
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:25px;
+      color:#888;
+      font-size:13px;
+    }
+.logo{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  border:3px solid #f5b041;
+  object-fit:cover;
+  position:absolute;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:2;
+  background:#fff;
+}
+
+
+
+  .booking-section{
+  margin-top:40px;
+  padding:25px;
+  background:#111;
+  border:1px solid #222;
+  border-radius:20px;
+}
+
+.booking-form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.booking-form input{
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#1b1b1b;
+  color:#fff;
+  font-size:15px;
+  outline:none;
+}
+
+.booking-form input::placeholder{
+  color:#aaa;
+}
+
+.book-btn{
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#d4a017;
+  color:#000;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.book-btn:hover{
+  transform:scale(1.03);
+}
+
+
+
+
+
+.hidden{
+  display:none;
+}
+
+    @media(max-width:480px){
+      .brand h1{
+        font-size:28px;
+      }
+    }
+
