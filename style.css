@@ -175,9 +175,11 @@
 
 #date{
   width: 100%;
+  max-width: 100%;
 }
 #time{
   width: 100%;
+  max-width: 100%;
 }
 
 
